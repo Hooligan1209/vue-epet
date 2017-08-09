@@ -201,6 +201,7 @@
         </div>
 
         <split></split>
+
         <!--体验管-->
         <div class="phys-wrapper">
 
@@ -319,6 +320,73 @@
                     </div>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <split></split>
+
+        <!--口碑评价-->
+        <div class="praise-wrapper">
+          <div class="praise-banner">
+            <div class="more">
+              <a href="javascript:;">好评率99.64%</a>
+            </div>
+            <div class="icon">
+              <img src="./praise.png">
+            </div>
+          </div>
+          <div class="praise-content">
+            <div class="item-wrap">
+              <div class="item">
+                <div class="pic pic01"></div>
+                <div class="title">
+                  加入E宠2年6个月
+                </div>
+                <div class="user">
+                  <span class="text">红*****ω</span><a href="javascript:;">中华田园猫</a>
+                </div>
+                <div class="dis">
+                  包装完美，没有破漏的情况存在，虽说是跨境运输，但是物流的速度还是比想象中快，最主要的还是正品保证，买得放心吃的安心
+                </div>
+              </div>
+              <div class="item">
+                <div class="pic pic02"></div>
+                <div class="title">
+                  加入E宠2年6个月
+                </div>
+                <div class="user">
+                  <span class="text">自***人</span><a href="javascript:;">萨摩耶</a>
+                </div>
+                <div class="dis">
+                  物流挺给力，到货很快。包装也十分的棒，外面还有塑料薄膜包裹，非常好，一看就让人觉得质量绝对一级棒。客服真心不错，很耐心的给你讲解！就冲这个大大的好评，以后狗狗的东西直接来这里！ 再次祝e宠生意兴隆。
+                </div>
+              </div>
+              <div class="item">
+                <div class="pic pic03"></div>
+                <div class="title">
+                  加入E宠2年6个月
+                </div>
+                <div class="user">
+                  <span class="text">胡**婷</span><a href="javascript:;">萨摩耶</a>
+                </div>
+                <div class="dis">
+                  E宠的产品是一直很信任的，狗粮，零食保健品什么的都是在E宠买，买的放心，给狗子吃的也比较安心。物流超快的，一般第二天就能收到了，很快很及时，给E宠及工作人员点一百二十个赞
+                </div>
+              </div>
+              <div class="item">
+                <div class="pic pic04"></div>
+                <div class="title">
+                  加入E宠2年6个月
+                </div>
+                <div class="user">
+                  <span class="text">霁**月</span><a href="javascript:;">串串</a>
+                </div>
+                <div class="dis">
+                  一直在e宠买狗子的口粮和零食，非常感谢e宠给我提供的便利。最感动的就是客服们，每次有不懂的问题去咨询都会得到满意的回答，不管多么简单的问题她们都从不厌烦。谢谢
+                  e宠！
+                </div>
               </div>
             </div>
           </div>
@@ -621,7 +689,7 @@
         width 95%
         margin 0 auto
         .icon
-          width 50%
+          width 40%
           margin 0 auto
           img
             width 100%
@@ -629,7 +697,7 @@
           width 64px
           height 22px
           float right
-          margin-top 15px
+          margin-top 10px
           a
             display inline-block
             width 100%
@@ -710,4 +778,87 @@
                   &:before
                     content: '已捐助￥'
 
+    .praise-wrapper
+      width 100%
+      padding-bottom 10px
+      .praise-banner
+        width 95%
+        margin 0 auto
+        .icon
+          width 40%
+          margin 0 auto
+          img
+            width 100%
+        .more
+          width 78px
+          height 22px
+          float right
+          margin-top 10px
+          margin-right 5px
+          a
+            display inline-block
+            width 100%
+            height 100%
+            font-size 12px
+            white-space nowrap
+            color #7e8c8d
+            padding-right 10px
+            background url("./sjBtn.png") no-repeat top right
+            background-position-y 1px
+            background-size 10%
+
+      .praise-content
+        width 100%
+        .item-wrap
+          display flex
+          flex-wrap wrap
+          margin-right 12px
+          .item
+            flex 44% 1 0
+            margin-top 10px
+            margin-left 3%
+            .pic
+              width 100%
+              height 145px
+              &.pic01
+                background url("./pic01.jpg") no-repeat
+                background-size 100% auto
+              &.pic02
+                background url("./pic02.jpg") no-repeat
+                background-size 100% auto
+              &.pic03
+                background url("./pic03.jpg") no-repeat
+                background-size 100% auto
+              &.pic04
+                background url("./pic04.jpg") no-repeat
+                background-size 100% auto
+            .title
+              font-size 12px
+              line-height 24px
+              color #fff
+              text-align center
+              background-color rgba(0,0,0,0.4)
+
+            .user
+              font-size 12px
+              height 25px
+              line-height 25px
+              padding-top 5px
+              background-color #f3f3f3
+              & a
+                display inline-block
+                padding 0 3px
+                color #333
+                border-radius 5px
+                float right
+                background-color #e7e7e7
+            .dis
+              font-size 13px
+              padding 8px 5px
+              box-sizing border-box
+              overflow hidden
+              line-height 18px
+              color #7e8c8d
+              height 60px
+              background-color #f3f3f3
 </style>

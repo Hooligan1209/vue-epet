@@ -48,7 +48,7 @@ import downapp from './components/downApp/downApp.vue'
 export default {
   data () {
       return {
-          isShow: true
+          isShow: false
       }
   },
 
@@ -87,14 +87,15 @@ export default {
               width 75px
               height 36px
               text-align center
-              &.active
-                border-bottom 2px solid #e73f85
               a
                 font-size 14px
                 line-height 36px
+                width 100%
+                display inline-block
                 color #666
                 &.active
                   color #e73f85
+                  border-bottom 2px solid #e73f85
 
 
   .footer-wrapper
@@ -103,7 +104,7 @@ export default {
     bottom 0
     z-index 50
     width 100%
-    height 45p
+    height 45px
     line-height 45px
     background-color: #bfa
     text-align center
