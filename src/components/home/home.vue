@@ -1,12 +1,13 @@
 <template>
     <div>
       <div class="home-wrapper">
+        <div class="carousel-wrapper">
         <!--轮播图组件-->
           <carousel :images="images"></carousel>
-
+        </div>
         <!--拖拽组件，待改进-->
         <div class="carOnly">
-          <Carousel :auto="0" :loop="false" :delta="375">
+          <Carousel :auto="0" :loop="false" :delta="400" :flickThreshold="100">
             <div class="item">
               <a href="javascript:;">
                 <img src="./goOnly.gif">
@@ -405,7 +406,8 @@
     export default {
       data () {
           return {
-              images: ['pic1.png','pic2.png','pic3.png','pic4.png','pic5.png']
+              images: ['pic1.png','pic2.png','pic3.png','pic4.png','pic5.png'],
+              onlyImg: ['goOnly.gif']
           }
       },
       created () {
@@ -423,7 +425,8 @@
             this.$refs.benUl.style.width = (benLis[0].offsetWidth + 10 )*benLis.length+ 'px'
             this.benScroll = new BScroll(this.$refs.benItems , {
               click: true,
-              scrollX: true
+              scrollX: true,
+              momentum:false
             })
           })
         },
@@ -453,7 +456,8 @@
 <style lang="stylus" rel="stylesheet/stylus">
   .home-wrapper
     width 100%
-    height 100%
+    .carousel-wrapper
+      height 160px
     .carOnly
       width 100%
       height 100%
