@@ -2,7 +2,7 @@
     <div class="back-wrapper">
       <div class="back-header">
         <a href="/home" class="backBtn"></a>
-        <div class="text">招聘公告</div>
+        <div class="text">登录界面</div>
         <i class="more" @click="toggleMore"></i>
       </div>
       <transition name="fade">
