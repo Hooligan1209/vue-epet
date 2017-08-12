@@ -26,12 +26,14 @@
         </ul>
       </div>
     </div>
-      <div class="wrapper">
-          <router-view></router-view>
+
+    <div class="wrapper">
+        <router-view></router-view>
       </div>
-      <div class="footer-wrapper">
-        <footer-box></footer-box>
-      </div>
+
+    <div class="footer-wrapper">
+      <footer-box></footer-box>
+    </div>
   </div>
 </template>
 
@@ -109,15 +111,17 @@ export default {
               color #e73f85
               border-bottom 2px solid #e73f85
   .wrapper
-    min-height 100%
-    position relative
+    width 100%
+    position absolute
+    overflow hidden
     top 87px
-    padding-bottom 45px
+    bottom 45px
+    left 0
   .footer-wrapper
     position fixed
     left 0
     bottom 0
-    z-index 50
+    z-index 20
     width 100%
     height 45px
     line-height 45px

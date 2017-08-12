@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <scroller>
       <div class="home-wrapper">
         <div class="carousel-wrapper">
-        <!--轮播图组件-->
+          <!--轮播图组件-->
           <carousel :images="images"></carousel>
         </div>
         <!--拖拽组件，待改进-->
@@ -70,72 +70,72 @@
           <div class="eveBuy-content"  ref="goodsList">
             <ul class="goods" ref="picUi">
               <li class="good-item">
-                  <a href="javascript:;">
-                    <img src="./good01.jpg" alt="">
-                  </a>
+                <a href="javascript:;">
+                  <img src="./good01.jpg" alt="">
+                </a>
                 <div class="good-price">89.02</div>
                 <div class="good-spare">5.03</div>
               </li>
               <li class="good-item">
-                  <a href="javascript:;">
-                    <img src="./good02.jpg" alt="">
-                  </a>
+                <a href="javascript:;">
+                  <img src="./good02.jpg" alt="">
+                </a>
                 <div class="good-price">17.69</div>
                 <div class="good-spare">3.15</div>
               </li>
               <li class="good-item">
-                  <a href="javascript:;">
-                    <img src="./good03.jpg" alt="">
-                  </a>
+                <a href="javascript:;">
+                  <img src="./good03.jpg" alt="">
+                </a>
                 <div class="good-price">56.21</div>
                 <div class="good-spare">8.10</div>
               </li>
               <li class="good-item">
-                  <a href="javascript:;">
-                    <img src="./good06.jpg" alt="">
-                  </a>
+                <a href="javascript:;">
+                  <img src="./good06.jpg" alt="">
+                </a>
                 <div class="good-price">63.15</div>
                 <div class="good-spare">11.10</div>
               </li>
               <li class="good-item">
-                  <a href="javascript:;">
-                    <img src="./good05.jpg" alt="">
-                  </a>
+                <a href="javascript:;">
+                  <img src="./good05.jpg" alt="">
+                </a>
                 <div class="good-price">98.55</div>
                 <div class="good-spare">9.25</div>
               </li>
               <li class="good-item">
-                  <a href="javascript:;">
-                    <img src="./good01.jpg" alt="">
-                  </a>
+                <a href="javascript:;">
+                  <img src="./good01.jpg" alt="">
+                </a>
                 <div class="good-price">89.02</div>
                 <div class="good-spare">5.03</div>
               </li>
               <li class="good-item">
-                  <a href="javascript:;">
-                    <img src="./good02.jpg" alt="">
-                  </a>
+                <a href="javascript:;">
+                  <img src="./good02.jpg" alt="">
+                </a>
                 <div class="good-price">17.69</div>
                 <div class="good-spare">3.15</div>
               </li>
               <li class="good-item">
-                  <a href="javascript:;">
-                    <img src="./good03.jpg" alt="">
-                  </a>
+                <a href="javascript:;">
+                  <img src="./good03.jpg" alt="">
+                </a>
                 <div class="good-price">56.21</div>
                 <div class="good-spare">8.10</div>
               </li>
               <li class="good-item">
-                  <a href="javascript:;">
-                    <img src="./good06.jpg" alt="">
-                  </a>
+                <a href="javascript:;">
+                  <img src="./good06.jpg" alt="">
+                </a>
                 <div class="good-price">63.15</div>
                 <div class="good-spare">11.10</div>
               </li>
               <li class="good-item">
-                  <a href="javascript:;">
-                    <img src="./good05.jpg" alt="">
-                  </a>
+                <a href="javascript:;">
+                  <img src="./good05.jpg" alt="">
+                </a>
                 <div class="good-price">98.55</div>
                 <div class="good-spare">9.25</div>
               </li>
@@ -207,13 +207,13 @@
         <div class="phys-wrapper">
 
           <div class="phys-banner">
-              <div class="more">
-                <a href="javascript:;"></a>
-              </div>
+            <div class="more">
+              <a href="javascript:;"></a>
+            </div>
 
-              <div class="icon">
-                <img src="./physical.png" alt="体验馆">
-              </div>
+            <div class="icon">
+              <img src="./physical.png" alt="体验馆">
+            </div>
           </div>
           <carousel :images="images"></carousel>
         </div>
@@ -260,7 +260,7 @@
               <a href="javascript:;"></a>
             </div>
             <div class="icon">
-                <img src="./benefit.jpg">
+              <img src="./benefit.jpg">
             </div>
           </div>
           <div class="benefit-content">
@@ -395,7 +395,7 @@
 
         <split></split>
       </div>
-    </div>
+    </scroller>
 </template>
 
 <script>
@@ -456,6 +456,7 @@
 <style lang="stylus" rel="stylesheet/stylus">
   .home-wrapper
     width 100%
+    height 100%
     .carousel-wrapper
       height 160px
     .carOnly

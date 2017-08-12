@@ -7,9 +7,13 @@ import App from './App'
 import MintUi from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
+import VueScroller from 'vue-scroller'
+
 import router from './router'
 
 Vue.use(MintUi);
+
+Vue.use(VueScroller)
 
 Vue.config.productionTip = false;
 

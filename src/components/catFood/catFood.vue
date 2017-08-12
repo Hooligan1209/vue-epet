@@ -1,86 +1,88 @@
 <template>
     <div>
-      <div class="catFood-wrapper">
-        <!--轮播图-->
-        <div class="catCar-wrapper">
-          <carousel :images="catImgArr"></carousel>
-        </div>
+      <scroller>
+        <div class="catFood-wrapper">
+          <!--轮播图-->
+          <div class="catCar-wrapper">
+            <carousel :images="catImgArr"></carousel>
+          </div>
 
-        <!--菜单栏-->
-        <div class="menu-wrapper">
-          <div class="menu-item">
-            <a href="javascript:;">
-              <img src="./catIcon01.png" alt="">
-            </a>
-          </div>
-          <div class="menu-item">
-            <a href="javascript:;">
-              <img src="./catIcon02.png" alt="">
-            </a>
-          </div>
-          <div class="menu-item">
-            <a href="javascript:;">
-              <img src="./catIcon03.png" alt="">
-            </a>
-          </div>
-          <div class="menu-item">
-            <a href="javascript:;">
-              <img src="./catIcon04.png" alt="">
-            </a>
-          </div>
-        </div>
-
-        <split></split>
-
-        <!--品牌展示-->
-        <div class="banner-wrapper">
-          <div class="banner-content">
-            <div class="item">
-              <div class="text">
-                喜跃VS妙多乐 <span>1元换罐头</span>
-              </div>
-              <div class="pic">
-                <a href="javascript:;">
-                  <img src="./catimg03.jpg" alt="">
-                </a>
-              </div>
+          <!--菜单栏-->
+          <div class="menu-wrapper">
+            <div class="menu-item">
+              <a href="javascript:;">
+                <img src="./catIcon01.png" alt="">
+              </a>
             </div>
-            <div class="item">
-              <div class="text">
-                安娜玛特 <span>增强免疫,美毛粮</span>
-              </div>
-              <div class="pic">
-                <a href="javascript:;">
-                  <img src="./catimg04.jpg" alt="">
-                </a>
-              </div>
+            <div class="menu-item">
+              <a href="javascript:;">
+                <img src="./catIcon02.png" alt="">
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="javascript:;">
+                <img src="./catIcon03.png" alt="">
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="javascript:;">
+                <img src="./catIcon04.png" alt="">
+              </a>
             </div>
           </div>
+
+          <split></split>
+
+          <!--品牌展示-->
+          <div class="banner-wrapper">
+            <div class="banner-content">
+              <div class="item">
+                <div class="text">
+                  喜跃VS妙多乐 <span>1元换罐头</span>
+                </div>
+                <div class="pic">
+                  <a href="javascript:;">
+                    <img src="./catimg03.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="text">
+                  安娜玛特 <span>增强免疫,美毛粮</span>
+                </div>
+                <div class="pic">
+                  <a href="javascript:;">
+                    <img src="./catimg04.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--导航-->
+          <div class="tabs-wrapper">
+            <div class="tab">
+              <router-link to="/catFood/foodList/JK">进口猫粮</router-link>
+            </div>
+            <div class="tab">
+              <router-link to="/catFood/foodList/GC">国产猫粮</router-link>
+            </div>
+            <div class="tab">
+              <router-link to="/catFood/foodList/CL">拆零试吃</router-link>
+            </div>
+            <div class="tab">
+              <router-link to="/catFood/foodList/CF">处方猫粮</router-link>
+            </div>
+          </div>
+
+          <!--猫粮列表-->
+          <div class="foods-wrapper">
+
+            <router-view></router-view>
+
+          </div>
         </div>
-
-        <!--导航-->
-        <div class="tabs-wrapper">
-          <div class="tab">
-            <router-link to="/catFood/foodList/JK">进口猫粮</router-link>
-          </div>
-          <div class="tab">
-            <router-link to="/catFood/foodList/GC">国产猫粮</router-link>
-          </div>
-          <div class="tab">
-            <router-link to="/catFood/foodList/CL">拆零试吃</router-link>
-          </div>
-          <div class="tab">
-            <router-link to="/catFood/foodList/CF">处方猫粮</router-link>
-          </div>
-        </div>
-
-        <!--猫粮列表-->
-        <div class="foods-wrapper">
-
-          <router-view></router-view>
-
-        </div>
-      </div>
+      </scroller>
     </div>
 </template>
 
